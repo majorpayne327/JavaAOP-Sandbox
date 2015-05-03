@@ -5,13 +5,13 @@ package hello;
  */
 public aspect HelloAspect {
 
-    pointcut hello() : call(void hello.Hello.sayHello());
+    public pointcut hello() : call(void hello.Hello.sayHello());
 
     before(): hello(){
-        System.out.println("Introducing Hello...\n\n");
+        System.out.println("Introducing Hello...\n");
     }
 
     after(): hello(){
-        System.out.println("Hello leaves the stage...");
+        System.out.println("Hello leaves the stage...\n");
     }
 }

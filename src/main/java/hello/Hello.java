@@ -6,12 +6,17 @@ package hello;
 public class Hello {
 
     public static void sayHello(){
-        System.out.println("Hello World!\n\n");
+        System.out.println("Hello World!\n");
+        sayGoodBye();
+    }
+
+    public static void sayGoodBye(){
+        System.out.println("Goodbye World!\n");
     }
 
     public static void main(String[] args){
-        System.out.println("Executing");
+        System.out.println("Executing\n");
         sayHello();
-        System.out.println("Finished Executing");
+        System.out.println("Finished Executing\n");
     }
 }
